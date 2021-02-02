@@ -11,9 +11,9 @@ public class Shapes {
         } // Printing the first shape.
 
         for (int i= 1; i < 6; i++ ) {
-            if (i == 1 || i == 5) {
+            if (i == 1 || i == 5) 
                 System.out.println("*****");
-            } else {
+            else {
                 System.out.println("*   *");
             }
         } // Printing the second shape
