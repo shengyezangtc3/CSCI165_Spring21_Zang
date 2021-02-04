@@ -18,11 +18,11 @@ public class Shapes {
             }
         } // Printing the second shape
 
-        System.out.println("*****");
-        System.out.println(" *** ");
-        System.out.println("  **");
-        System.out.println(" *** ");
-        System.out.println("*****"); // Printing the third shape
+        System.out.println("* * * * *");
+        System.out.println("  * * *  ");
+        System.out.println("   * *   ");
+        System.out.println("  * * *  ");
+        System.out.println("* * * * *"); // Printing the third shape
     }
 
 }
