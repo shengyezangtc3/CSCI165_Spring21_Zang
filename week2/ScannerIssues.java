@@ -23,7 +23,7 @@ public class ScannerIssues{
                 scanner.skip("\r\n");
                 double interest = value * 0.1;
 
-                System.out.printf("%s will be %d and earn %f in interest from %s after one year%n", name, age, interest, stonk);                // print the result here            
+                System.out.printf("%s will be %d and earn %.2f in interest from %s after one year%n", name, age, interest, stonk);                // print the result here            
             } // end while
 
             scanner.close();                        // don't forget to close the scanner
