@@ -10,8 +10,12 @@
 public class Toss {
     public static void main(String[] args) {
         
-        int[] toss = tosses(10000);
+        int[] toss = tosses(100);
         longestRun(toss, runs(toss));
+        for(int i=0; i<30; i++) {
+            System.out.print(getLongest(toss) + " ");
+        }
+        System.out.println("We can see that the length of the longest run with highest frequency is 2 when count=100");
         
     }
 
@@ -92,5 +96,19 @@ public class Toss {
         }
         System.out.printf("Starting index: %d Ending index: %d%n", start, end);
         System.out.println("The length of the longest run is: " + longest);
+    }
+
+    public static int getLongest(int[] runs) {
+        int longest = 0;
+        int index = 0;
+        int length;
+        while(index<runs.length && runs[index] != runs[index+1]) {
+            length = runs[index+1]-runs[index];
+            if(length > longest) {
+                longest = length + 1;
+            }
+            index += 2;
+        }
+        return longest;
     }
 }
