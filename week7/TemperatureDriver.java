@@ -8,7 +8,6 @@ public class TemperatureDriver {
     public static void main(String[] args) {
         Temperature[] temperatures = new Temperature[10];
 
-        System.out.println((char) 248);
         temperatures[0] = new Temperature();
         temperatures[0].setTemperature(-100);
         temperatures[1] = new Temperature(150);
