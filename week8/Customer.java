@@ -100,7 +100,7 @@ public class Customer {
     }
 
     public boolean equals(Customer otherCustomer) {
-        return this.name == otherCustomer.name && this.email == otherCustomer.email && this.phone == otherCustomer.phone;
+        return this.name.equals(otherCustomer.name) && this.email.equals(otherCustomer.email) && this.phone.equals(otherCustomer.phone);
     }
 
 }
