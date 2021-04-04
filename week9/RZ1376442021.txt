@@ -1,0 +1,11 @@
+Date: 4/4/2021
+Order ID: RZ1376442021
+Customer: Name: Roy Zang Email: asd@adc.com Phone: 0123456789
+Item: Beer
+Price: $9.0
+Quantity: 1
+Item: Beef Patty
+Price: $3.79
+Quantity: 1
+Tax: $1.02
+Total: $13.81
