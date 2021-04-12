@@ -52,11 +52,11 @@ public class Point3D extends Point {
 
     @Override
     public boolean equals(Object other) {
-        if (other instanceof Point3D) {
-            Point3D otherPoint = (Point3D) other;
-            return super.equals(other) && z == otherPoint.z;
-        }
-        return false;
+        if (this == other)    return true;
+        if (other == null)    return false;
+        if (getClass() != other.getClass())   return false;
+        Point3D otherPoint = (Point3D) other;
+        return super.equals(other) && z == otherPoint.z;
     }
 
 }

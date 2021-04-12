@@ -55,11 +55,12 @@ public class Point {
 
     @Override
     public boolean equals(Object other) {
-        if (other instanceof Point) {
-            Point point = (Point) other;
-            return x == point.x && y == point.y;
-        }
-        return false;
+        if (this == other)    return true;
+        if (other == null)    return false;
+        if (getClass() != other.getClass())   return false;
+
+        Point point = (Point) other;
+        return x == point.x && y == point.y;
     }
 
     public double distance(int x, int y) {

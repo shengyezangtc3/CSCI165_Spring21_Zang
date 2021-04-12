@@ -72,10 +72,10 @@ public class MovablePoint extends Point {
 
     @Override
     public boolean equals(Object other) {
-        if (other instanceof MovablePoint) {
-            MovablePoint point = (MovablePoint) other;
-            return super.equals(other) && xSpeed == point.xSpeed && ySpeed == point.ySpeed;
-        }
-        return false;
+        if (this == other)    return true;
+        if (other == null)    return false;
+        if (getClass() != other.getClass())   return false;
+        MovablePoint point = (MovablePoint) other;
+        return super.equals(other) && xSpeed == point.xSpeed && ySpeed == point.ySpeed;
     }
 }

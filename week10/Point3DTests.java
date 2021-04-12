@@ -29,5 +29,8 @@ public class Point3DTests {
         int[] expect = {0, 0, 1};
         assertTrue(Arrays.equals(expect, two.getXYZ()));
         assertFalse(one.equals(two));
+        assertFalse(two.equals(origin));
+        MovablePoint point = new MovablePoint(origin, 1.0f, 1.0f);
+        assertFalse(two.equals(point));
     }
 }

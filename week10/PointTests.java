@@ -26,6 +26,12 @@ public class PointTests {
         assertEquals(two.distance(one), 5.0);
         assertEquals(two.distance(0, 0), 5.0);
         assertEquals(Point.distance(one, two), 5.0);
+        Point3D point = new Point3D();
+        point.setX(1);
+        point.setY(0);
+        assertEquals(point.distance(one), 1.0);
+        MovablePoint point2 = new MovablePoint(one, 1.0f, 1.0f);
+        assertEquals(point.distance(point2), 1.0);
     }
 
     @Test
@@ -36,5 +42,9 @@ public class PointTests {
         assertFalse(one.equals(two));
         one.setXY(3, 4);
         assertTrue(one.equals(two));
+        Point3D point = new Point3D(3, 4, 5);
+        assertFalse(one.equals(point));
+        MovablePoint point2 = new MovablePoint(3, 4, 1.0f, 1.0f);
+        assertFalse(one.equals(point2));
     }
 }

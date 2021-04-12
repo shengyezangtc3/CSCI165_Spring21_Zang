@@ -23,5 +23,8 @@ public class MovablePointTests {
         Point point = new Point(1, 1);
         two = new MovablePoint(point, 1.0f, 1.0f);
         assertTrue(one.equals(two));
+        assertFalse(two.equals(point));
+        Point3D point2 = new Point3D(1, 1, 1);
+        assertFalse(two.equals(point2));
     }
 }

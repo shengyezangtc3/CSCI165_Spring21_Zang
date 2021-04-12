@@ -22,8 +22,8 @@ public class Driver {
         // distances
         System.out.println(one.distance());
         System.out.println(one.distance(two));
-        System.out.println(one.distance(three));
-        System.out.println(Point.distance(two, three));
+        System.out.println(two.distance(three));
+        System.out.println(Point.distance(one, three));
 
         // Polymorphism
         Point[] points = new Point[9];
