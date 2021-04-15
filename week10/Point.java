@@ -68,11 +68,11 @@ public class Point {
     }
 
     public double distance(Point other) {
-        return Math.sqrt(Math.pow(x - other.x, 2) + Math.pow(y - other.y, 2));
+        return distance(other.getX(), other.getY());
     }
 
     public double distance() {
-        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+        return distance(0, 0);
     }
 
     public static double distance(Point one, Point two) {
